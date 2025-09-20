@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+
+
+*{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  max-width: 1500px;
+  /* margin: 0px auto; */
+  overflow-x: hidden;
+}
+.arrow{
+  animation-name: ani;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes ani {
+  0%{
+    transform: translateY(-10px);
+  }
+  40%{
+    transform: translateY(0px);
+  }
+  80%{
+    transform: translateY(0px);
+
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+.service-menu::-webkit-scrollbar{
+  display: none;
+}
+.devParent:hover .devIcon {
+  transition: all 0.5s ease;
+  transform: rotate(360deg);
+}
+/* media queries for hero hello div */
+@media(max-width: 425px){
+  .lastDiv{
+    flex-direction: column;
+  }
+  .latestImg{
+    height: 12.5vw;
+  }
+  .latestHead{
+    font-size: 3.5vw;
+  }
+  .latestRead{
+    font-size: 3vw;
+  }
+  .latestRead i{
+    font-size: 3vw;
+  }
+  .devParent{
+    flex-direction: column;
+  }
+  .devParent img{
+    height: 9rem;
+    width: fit-content;
+    margin: 0px auto;
+  }
+  .mobileMenu li{
+    font-size: 0.9rem;
+  }
+  .mobileMenu button{
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  .serHead i,h4{
+    font-size: 0.9rem;
+  }
+  .serPara i,h4{
+    font-size: 0.9rem;
+  }
+  .proMenu li,i{
+    font-size: 0.9rem
+  }
+  
+}
+@media(max-width: 530px){
+  .inputCol{
+    flex-direction: column;
+    gap: 4px;
+  }
+  .inputGap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .latestCard{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px 5px;
+    width: 100%
+  }
+  .latestCard img{
+    width: 100%;
+    height: fit-content;
+  }
+  .latestHead{
+    text-align: center;
+  }
+}
+@media(min-width: 390px) and (max-width: 589px){
+  .hello{
+    right: -30%;
+  }
+  .hello h1{
+    font-size: 7rem;
+  }
+  .mini-head svg{
+    width: 1.5rem;
+  }
+  .mini-head h3{
+    font-size: 1.5rem;
+  }
+  .head-para h1{
+    font-size: 1.9rem;
+  }
+  .head-para p{
+    font-size: 1.1rem;
+  }
+}
+@media(min-width: 500px) and (max-width: 639px){
+  .menu{
+    font-size: 37px;
+  }
+  .logo{
+    width: 17rem;
+  }
+  .slide-head{
+    font-size: 1.8rem;
+  }
+  .slide-para{
+    font-size: 1rem;
+  }
+}
+@media(min-width: 590px ) and (max-width: 639px){
+  .hello{
+    right: -40%;
+  }
+  .hello h1{
+    font-size: 7rem;
+  }
+  .mini-head svg{
+    width: 1.5rem;
+  }
+  .mini-head h3{
+    font-size: 1.5rem;
+  }
+  .head-para h1{
+    font-size: 1.9rem;
+  }
+  .head-para p{
+    font-size: 1.1rem;
+  }
+}
+
+@media(min-width: 1200px){
+  .hello{
+    right: -10%;
+  }
+}
