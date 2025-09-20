@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import "./index.css";
 import Page1 from "./components/Page1";
 import logo from "./assets/logo.png";
